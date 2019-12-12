@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  php-apache:
+    hostname: ${USER}:symfony_template
+    image: feiit/split-docker:php72
+    expose:
+      - 80
+    volumes:
+      - .:/var/www
+    networks:
+      - dev_stack_net
+    labels:
+      traefik.frontend.rule: "Host:symfony-template.local"
+      traefik.backend: "symfony-template"
+    environment:
+      PHP_IDE_CONFIG: "serverName=symfony-template.local"
+
+networks:
+  dev_stack_net:
+    external:
+      name: dockerdevstack_dev_stack_net
