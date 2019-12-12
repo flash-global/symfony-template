@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd4837681bc8e7fab265d10a2041d22a",
+    "content-hash": "36d186dc2440ebba32a3d26b7c1c53a0",
     "packages": [
         {
             "name": "fei/phing-service",
