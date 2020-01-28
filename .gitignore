@@ -8,5 +8,5 @@
 ###< symfony/framework-bundle ###
 
 /.idea/
-/storage/local/
+/app/config/local/
 /tests/_support/_generated/
